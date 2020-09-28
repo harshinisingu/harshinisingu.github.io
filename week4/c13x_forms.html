@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+		.text-left{
+			margin-left:0px;
+			margin:none;
+			width: 3em;
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=password],
+		textarea 
+		{
+    		-webkit-appearance: rgb(192, 192, 192);
+		}
+	</style>
+</head>
+
+<body>
+<h1>Please complete our survey</h1>
+<form name="myform" action="survey_data.html" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+	<h2>Geographic information</h2>
+	<label for="state">State:</label>
+    <input type="text" pattern="[a-zA-Z]{2}" placeholder="Two Charecters" name="state" id="state"><br>
+    <label for="zipcode">ZipCode:</label>
+    <input type="number" pattern="[0-9]{5}" placeholder="Five Digits" name="zipcode" id="zipcode" ><br>
+	<h2>How did u hear about us</h2>
+	<div class="hear">
+	<label for="websearch">Web Search:</label>
+	<input type="checkbox" class="text-left" id="websearch"  name="websearch" value="1" id="websearch"><br>
+	
+	<label for="facebook">Facebook:</label>
+	<input type="checkbox" class="text-left"  name="facebook" value="facebook" id="facebook"><br>
+	
+	<label for="twitter">Twitter:</label>
+	<input type="checkbox" class="text-left" name="twitter" value="twitter" id="twitter"><br>
+	
+	<label for="emailmessage">Email Message:</label>
+	<input type="checkbox" class="text-left"  name="emailmessage" value="emailmessage" id="emailmessage"><br>
+	</div>
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>
