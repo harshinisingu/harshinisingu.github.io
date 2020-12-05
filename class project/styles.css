@@ -1,0 +1,202 @@
+/* By: Harshini Singu */
+* {
+    font-family: 'Poppins', serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    background: rgb(27, 59, 1);
+    background: linear-gradient(to bottom, rgb(27, 59, 1) 0%, rgb(41, 161, 22) 100%);
+    min-height: 100%;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding-right: 100px;
+    color: #800080;
+    font-size: 30px;
+    z-index: 10;
+}
+
+#table {
+    position: relative;
+    padding-top: 20px;
+}
+
+#dealer {
+    box-sizing: border-box;
+    padding-left: 155px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 215px;
+    position: relative;
+    width: 100%;
+}
+
+#deck {
+    background-color: #fcfcfc;
+    display: block;
+    top: 65px;
+    left: 15px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+    padding: 2px;
+    width: 120px;
+    height: 180px;
+}
+
+.card {
+    background-color: #fcfcfc;
+    position: relative;
+    width: 120px;
+    height: 180px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    margin: 15px;
+    font-size: 28px;
+    padding: 2px;
+}
+
+.back {
+    background-image: url('frontcard.png');
+    background-size: 120px 180px;
+    width: 96%;
+    height: 98%;
+    margin: 1% auto;
+    border-radius: 5px;
+}
+
+.diamonds,
+.hearts {
+    color: red;
+}
+
+.spades,
+.clubs {
+    color: black;
+}
+
+.face {
+    position: absolute;
+    width: 30px;
+    height: 28px;
+}
+
+.suit {
+    margin: auto;
+    font-size: 60px;
+}
+
+.top {
+    top: 2px;
+    left: 2px;
+}
+
+.bottom {
+    bottom: 0;
+    right: 2px;
+    text-align: right;
+}
+
+.border-line {
+    border: 4px dashed black;
+    opacity: 0.6;
+    margin: 10px 0;
+}
+
+.score {
+    position: relative;
+    text-align: right;
+    padding-right: 100px;
+    color: #fcfcfc;
+    opacity: 0.9;
+    font-size: 20px;
+    z-index: 10;
+}
+
+#footer {
+    text-align: center;
+    background-color: #337CFF;
+    border-top:1px solid #050505;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-top: 4px;
+}
+
+#status {
+    color: #100308;
+    position: relative;
+    opacity: 5;
+    font-size: 30px;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    color: #fcfcfc;
+    position:  relative;
+    display: inline-block;
+}
+
+.green {
+    background-color: green;
+}
+
+.green:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.purple {
+    background-color: #a83ce7;
+}
+
+.purple:hover {
+    background-color: #c482eb;
+    color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.red:hover {
+    background-color: rgb(231, 165, 165);
+    color: black;
+}
+
+
+button:disabled {
+    background-color: #999;
+}
+
+button:disabled:hover {
+    background-color: #999;
+}

@@ -1,0 +1,47 @@
+y<!-- By: Harshini Singu -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blackjack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="table">
+    <div class="header">BLACK JACK GAME</div>
+    <div id="dealer-score" class="score"> Dealer score: <span>0</span></div>
+    <div id="deck">
+      <div class="back"></div>
+    </div>
+    <div class="container" id="dealer">
+    </div>
+
+    <div class="border-line"></div>
+
+    <div id="player-score" class="score"> Your score: <span>0</span></div>
+    <div class="container" id="player">
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="status">Press DEAL to start the game</div>
+
+    <button id="deal" class="blue" type="button">DEAL</button>
+    <button id="hit" class="green" type="button" disabled>HIT</button>
+    <button id="stand" class="red" type="button" disabled>STAND</button>
+    <button id="split" class="purple" type="button" disabled>SPLIT</button>
+
+  </div>
+
+  <script type="text/javascript" src="blackjack.js"></script>
+  <script type="text/javascript">
+
+    Blackjack.init();
+  </script>
+</body>
+
+</html>
