@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>AUM Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+td { text-align: center !important; }
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div  style="height: 50px" class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+    <a>
+    	<img style="height: 50px;float: left;" src="logo.jpeg" alt="Italian Trulli">
+    	<p style="float: left;"> <b> OUR UNIVERSITY &nbsp;</b></p>
+    	
+    </a>
+
+    <a href="home.html" class="w3-bar-item w3-button ">Home</a>
+    <a href="description.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white ">Computer science program</a>
+    <a href="applicationform.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white ">Teaching Assistant Application</a>
+    <a href="gpacalculate.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-padding-large w3-white">GPA calculate</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Teaching Assistant Application</h1>
+      
+
+      
+      
+
+     
+
+     <h3>Apply today :</h3>
+
+      <form>
+        <label for="fname">Course 1:</label><br><br>
+        <label for="fname">Credit hours:</label><br>
+        <input type="number" id="hours1" name="fname"><br>
+        <label for="lname">Grade:</label><br>
+        <select style="width: 200px" id="grade1">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+        <br/><br/>
+
+
+        <label for="fname">Course 2:</label><br><br>
+        <label for="fname">Credit hours:</label><br>
+        <input type="number"  id="hours2"  name="fname"><br>
+        <label for="lname">Grade:</label><br>
+        <select style="width: 200px" id="grade2">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+        <br/><br/>
+
+
+        <label for="fname">Course 3:</label><br><br>
+        <label for="fname">Credit hours:</label><br>
+        <input type="number"  id="hours3" name="fname"><br>
+        <label for="lname">Grade:</label><br>
+        <select style="width: 200px" id="grade3">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+        <br/><br/>
+
+
+
+        <label for="fname">Course 4:</label><br><br>
+        <label for="fname">Credit hours:</label><br>
+        <input type="number"  id="hours4" name="fname"><br>
+        <label for="lname">Grade:</label><br>
+        <select style="width: 200px" id="grade4">
+            <option value="4">A</option>
+            <option value="3">B</option>
+            <option value="2">C</option>
+            <option value="1">D</option>
+            <option value="0">F</option>
+        </select>
+        <br/><br/>
+
+        <input type="button" value="Calculate" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+        onclick="calculateGPA()"></>
+
+        <br>
+      </form>
+
+    </div>
+
+   
+
+
+    <div id="textr" class="w3-third w3-center" style="margin-top: 150px;" >
+      <b >Final Result :</b> 
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: <br/>
+“Study without desire spoils the memory, and it retains nothing that it takes in.”
+<br/>Leonardo da Vinci</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>CONTACT</p>
+    <p>Sridatta Harshini Singu</p>
+ <p>(334)-354-5792
+</p>
+ <p>E-Mail: ssingu@aum.edu</p>
+ <p>Copyright 2020 </p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+
+function calculateGPA() {
+  var gpa = 0;
+
+  var credithours = $("#hours1").val() + $("#hours2").val() + $("#hours3").val() +
+  $("#hours4").val();
+
+  var credithoursgrades = 
+  $("#hours1").val() * $("#grade1").val() +
+  $("#hours2").val() * $("#grade2").val() +
+  $("#hours3").val() * $("#grade3").val()+
+  $("#hours4").val() * $("#grade4").val();
+
+  gpa = credithoursgrades/credithours;
+  $("#textr").html("<b>Final result : " + gpa + "</b>")
+
+  console.log(gpa);
+}
+
+
+</script>
+
+</body>
+</html>
